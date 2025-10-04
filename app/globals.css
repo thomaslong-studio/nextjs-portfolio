@@ -8,6 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: #EF626C;
+  --color-accent-soft: #2B2B2B;
   --font-sans: var(--font-kode);
   --font-heading: var(--font-big-shoulders);
 }

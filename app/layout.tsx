@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Header from "./components/header";
 import Footer from "./components/footer";
+import ScrollProgressWrapper from "./components/scroll-progress-wrapper";
 
 const headingFont = Big_Shoulders({
   variable: "--font-big-shoulders",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <ScrollProgressWrapper />
       </body>
     </html>
   );
