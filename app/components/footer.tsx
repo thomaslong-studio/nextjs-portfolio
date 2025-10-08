@@ -14,7 +14,7 @@ export default function Footer() {
           >
             LinkedIn
           </a>
-          <span className="text-[#8A8A8A]">/</span>
+          <span className="text-accent-light">/</span>
           <a 
             href="#" 
             target="_blank" 
@@ -23,7 +23,7 @@ export default function Footer() {
           >
             Github
           </a>
-          <span className="text-[#8A8A8A]">/</span>
+          <span className="text-accent-light">/</span>
           <a 
             href="#" 
             download

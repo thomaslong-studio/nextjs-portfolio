@@ -10,6 +10,7 @@
   --color-foreground: var(--foreground);
   --color-accent: #EF626C;
   --color-accent-soft: #2B2B2B;
+  --color-accent-light: #8A8A8A;
   --color-link-green: #00FFC5;
   --font-sans: var(--font-kode);
   --font-heading: var(--font-big-shoulders);

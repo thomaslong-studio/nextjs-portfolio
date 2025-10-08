@@ -57,7 +57,7 @@ export default function SectionContact() {
               value={formData.name}
               onChange={handleInputChange}
               placeholder="Name"
-              className="flex-1 text-[#EDEDED] text-sm font-['Kode_Mono'] bg-transparent border-none outline-none placeholder:text-[#8A8A8A]"
+              className="flex-1 text-[#EDEDED] text-sm font-['Kode_Mono'] bg-transparent border-none outline-none placeholder:text-accent-light"
               required
             />
           </div>
@@ -72,7 +72,7 @@ export default function SectionContact() {
               value={formData.email}
               onChange={handleInputChange}
               placeholder="Email"
-              className="flex-1 text-[#EDEDED] text-sm font-['Kode_Mono'] bg-transparent border-none outline-none placeholder:text-[#8A8A8A]"
+              className="flex-1 text-[#EDEDED] text-sm font-['Kode_Mono'] bg-transparent border-none outline-none placeholder:text-accent-light"
               required
             />
           </div>
@@ -86,7 +86,7 @@ export default function SectionContact() {
               value={formData.message}
               onChange={handleInputChange}
               placeholder="Drop me a message – I'll handle the rest!"
-              className="min-h-[120px] w-full text-[#EDEDED] text-sm font-['Kode_Mono'] bg-transparent border-none outline-none resize-y placeholder:text-[#8A8A8A]"
+              className="min-h-[120px] w-full text-[#EDEDED] text-sm font-['Kode_Mono'] bg-transparent border-none outline-none resize-y placeholder:text-accent-light"
               required
             />
           </div>
