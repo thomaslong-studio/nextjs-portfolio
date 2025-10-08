@@ -22,9 +22,28 @@ body {
 }
 
 .wrapper {
-  padding: 32px;
+  padding: 48px 32px;
   max-width: 1200px;
   margin: auto;
+}
+.wrapper:first-of-type {
+  padding: 32px 32px 48px;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    padding: 72px 32px;
+  }
+  .wrapper:first-of-type {
+    padding: 32px 32px 72px;
+  }
+}
+@media only screen and (min-width: 1042px) {
+  .wrapper {
+    padding: 96px 32px;
+  }
+  .wrapper:first-of-type {
+    padding: 32px 32px 96px;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .wrapper {

@@ -29,7 +29,7 @@ export default function SectionHero() {
   return (
     <div className="wrapper flex flex-col md:flex-row gap-6 md:gap-0">
       <div className="flex flex-1 min-w-3/12 justify-center items-center flex-col">
-        <p className="self-stretch text-sm font-['Kode_Mono']">
+        <p className="text-sm lg:text-base">
           I’m a creative front-end developer with a knack for turning ideas into pixel-perfect realities. With 5 years of industry experience and a solid background in web design, I bridge the gap between functionality and aesthetics, building digital experiences that are as seamless as they are visually engaging.
         </p>
       </div>
