@@ -51,3 +51,19 @@ body {
     max-width: 1400px;
   }
 }
+
+.input-field .input-accent {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background-color: var(--foreground);
+  transition: all 200ms ease-in-out;
+}
+.input-field input:not(:placeholder-shown) + .input-accent,
+.input-field input:focus + .input-accent,
+.input-field textarea:not(:placeholder-shown) + .input-accent,
+.input-field textarea:focus + .input-accent {
+  width: 100%;
+}
