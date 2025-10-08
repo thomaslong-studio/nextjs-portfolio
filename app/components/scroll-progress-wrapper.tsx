@@ -28,7 +28,7 @@ export default function ScrollProgressWrapper() {
           {/* Progress Bar */}
           <div className="h-1 w-full bg-accent-soft">
             <div 
-              className="h-full bg-accent transition-all duration-150 ease-out"
+              className="h-full bg-accent"
               style={{ width: `${scrollProgress}%` }}
             />
           </div>

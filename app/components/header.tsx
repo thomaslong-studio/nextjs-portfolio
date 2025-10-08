@@ -11,12 +11,13 @@ export default function Header() {
     const onScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
+    onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
-    <header className="sticky top-0 p-4 z-10">
+    <header className="sticky top-0 pt-4 pl-4 pr-4 z-20">
       <div className={`flex justify-between items-center p-4 transition-all duration-200 border ${isScrolled ? 'bg-[#1e1e1e99] rounded-md border-accent-soft backdrop-blur-lg' : 'bg-transparent border-transparent'}`}>
         <Link 
         href="/"
