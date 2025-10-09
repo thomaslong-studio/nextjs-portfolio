@@ -1,11 +1,11 @@
 export default function Footer() {
   return (
-    <footer>
-      <div className="flex justify-between items-center">
-        <span className="text-[#EDEDED] text-sm font-['Kode_Mono']">
+    <footer className="p-4">
+      <div className="p-4 border-t border-accent-soft flex flex-col lg:flex-row justify-between items-center font-sans text-sm">
+        <span className="">
           2025 | thomasl.dev
         </span>
-        <div className="flex items-center gap-4 text-[#EDEDED] text-sm font-['Kode_Mono']">
+        <div className="flex items-center gap-4 ">
           <a 
             href="#" 
             target="_blank" 
