@@ -1,26 +1,69 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #171717;
+  --foreground: #EDEDED;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-accent: #EF626C;
+  --color-accent-soft: #2B2B2B;
+  --color-accent-light: #8A8A8A;
+  --color-link-green: #00FFC5;
+  --font-sans: var(--font-kode);
+  --font-heading: var(--font-big-shoulders);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+  padding: 48px 32px;
+  max-width: 1200px;
+  margin: auto;
+}
+.wrapper:first-of-type {
+  padding: 32px 32px 48px;
+}
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    padding: 72px 32px;
+  }
+  .wrapper:first-of-type {
+    padding: 32px 32px 72px;
+  }
+}
+@media only screen and (min-width: 1042px) {
+  .wrapper {
+    padding: 96px 32px;
+  }
+  .wrapper:first-of-type {
+    padding: 32px 32px 96px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .wrapper {
+    max-width: 1400px;
+  }
+}
+
+.input-field .input-accent {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0px;
+  height: 2px;
+  background-color: var(--foreground);
+  transition: all 200ms ease-in-out;
+}
+.input-field input:not(:placeholder-shown) + .input-accent,
+.input-field input:focus + .input-accent,
+.input-field textarea:not(:placeholder-shown) + .input-accent,
+.input-field textarea:focus + .input-accent {
+  width: 100%;
 }
