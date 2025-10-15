@@ -6,6 +6,8 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import ScrollProgressWrapper from "./components/scroll-progress-wrapper";
 
+import { Analytics } from '@vercel/analytics/next';
+
 const headingFont = Big_Shoulders({
   variable: "--font-big-shoulders",
   subsets: ["latin"],
@@ -35,6 +37,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <ScrollProgressWrapper />
+        <Analytics />
       </body>
     </html>
   );
