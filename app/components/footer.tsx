@@ -7,7 +7,7 @@ export default function Footer() {
         </span>
         <div className="flex items-center gap-4 ">
           <a 
-            href="#" 
+            href="https://www.linkedin.com/in/thomas-longworth-3b4a4518a/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
@@ -16,7 +16,7 @@ export default function Footer() {
           </a>
           <span className="text-accent-light">/</span>
           <a 
-            href="#" 
+            href="https://github.com/thomaslong-studio" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hover:text-white transition-colors"
@@ -25,7 +25,7 @@ export default function Footer() {
           </a>
           <span className="text-accent-light">/</span>
           <a 
-            href="#" 
+            href="Thomas_Longworth_CV.pdf" 
             download
             className="hover:text-white transition-colors"
           >

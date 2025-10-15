@@ -25,13 +25,25 @@ export default function SectionContact() {
     setSubmitStatus('idle');
 
     try {
-      // Here you would typically send the data to your backend
-      // For now, we'll just simulate a successful submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const formDataToSend = new FormData();
+      formDataToSend.append('name', formData.name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('message', formData.message);
+      formDataToSend.append('_subject', 'New Contact Form Submission from Portfolio');
+      formDataToSend.append('_captcha', 'false'); 
+      formDataToSend.append('_next', window.location.href); 
+
+      const response = await fetch('https://formsubmit.co/72379ca944a561ae3c597cbac0eee2bf', {
+        method: 'POST',
+        body: formDataToSend
+      });
       
-      console.log('Form submitted:', formData);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', message: '' });
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Form submission failed');
+      }
     } catch (error) {
       console.error('Form submission error:', error);
       setSubmitStatus('error');
@@ -41,10 +53,10 @@ export default function SectionContact() {
   };
 
   return (
-    <div className="wrapper flex flex-col lg:flex-row gap-10 lg:gap-16 w-full">
+    <div className="wrapper flex flex-col lg:flex-row gap-10 lg:gap-16 w-full" id="contact">
       <div className="flex flex-1 justify-center items-start flex-col">
         <h2 className="font-heading font-semibold text-5xl lg:text-7xl">
-          Let's Build Something Together.
+          let's build something together.
         </h2>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-1 justify-center items-start flex-col gap-4">
@@ -108,15 +120,14 @@ export default function SectionContact() {
           </button>
         </div>
         
-        {/* Status Messages */}
         {submitStatus === 'success' && (
           <p className="text-green-400 text-sm">
-            Message sent successfully!
+            Thanks for reaching out! I'll get back to you soon.
           </p>
         )}
         {submitStatus === 'error' && (
           <p className="text-red-400 text-sm">
-            Failed to send message. Please try again.
+            Oops! Something went wrong. Mind giving it another shot?
           </p>
         )}
       </form>

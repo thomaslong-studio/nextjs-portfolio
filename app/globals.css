@@ -16,6 +16,10 @@
   --font-heading: var(--font-big-shoulders);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
