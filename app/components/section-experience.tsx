@@ -8,7 +8,7 @@ export default function SectionExperience() {
       <div className="flex self-stretch justify-start items-start flex-col lg:flex-row">
         <div className="w-full lg:w-1/3 flex border-solid border-[#2B2B2B] border-b py-3">
           <p className="flex-1 text-accent-light text-sm font-['Kode_Mono']">
-            August 2022 – Present
+            August 2022 – July 2025
           </p>
         </div>
         <div className="flex flex-1 w-full justify-start items-start flex-col gap-2.5">
