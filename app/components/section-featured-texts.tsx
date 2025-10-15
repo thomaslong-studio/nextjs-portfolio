@@ -15,7 +15,7 @@ export default function SectionFeaturedTexts() {
       </div>
       <div className="flex flex-col gap-5 lg:gap-7 md:max-w-2/3 ml-auto">
         <h2 className="font-heading font-semibold text-5xl lg:text-7xl">
-          More Than Just Technical Skills.
+          more than just technical skills.
         </h2>
         <p className="text-sm lg:text-base">
           Beyond the code, I bring a strong set of soft skills that keep
