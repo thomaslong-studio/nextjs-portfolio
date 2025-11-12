@@ -1,4 +1,5 @@
 import Image from "next/image";
+import AnimatedElement from "./animated-section";
 
 interface WorkHeroProps {
   title: string;
@@ -23,16 +24,20 @@ export default function WorkHero({
     <div className="wrapper w-full flex flex-col gap-10 lg:gap-16">
       {/* Title and Description */}
       <div className="flex flex-col items-center text-center gap-5 lg:gap-7">
-        <h1 className="font-heading font-semibold text-8xl lg:text-9xl">
-          {title}
-        </h1>
-        <p className="text-sm lg:text-base max-w-lg">
-          {description}
-        </p>
+        <AnimatedElement>
+          <h1 className="font-heading font-semibold text-8xl lg:text-9xl">
+            {title}
+          </h1>
+        </AnimatedElement>
+        <AnimatedElement delay={0.05}>
+          <p className="text-sm lg:text-base max-w-lg">
+            {description}
+          </p>
+        </AnimatedElement>
       </div>
 
       {/* What, Why, How Boxes */}
-      <div className="flex flex-col sm:flex-row gap-3 w-full max-w-5xl mx-auto">
+      <AnimatedElement delay={0.1} className="flex flex-col sm:flex-row gap-3 w-full max-w-5xl mx-auto">
         <div className="flex-1 bg-accent-soft/50 text-center p-4 lg:p-6">
           <div className="flex flex-col gap-2">
             <span className="text-2xl font-heading">
@@ -57,17 +62,17 @@ export default function WorkHero({
             <span className="text-sm">{how}</span>
           </div>
         </div>
-      </div>
+      </AnimatedElement>
 
       {/* Main Image */}
-      <div className="relative w-full aspect-video overflow-hidden">
+      <AnimatedElement delay={0.2} className="relative w-full aspect-video overflow-hidden">
         <Image
           src={imageSrc}
           alt={imageAlt}
           fill
           className="object-cover"
         />
-      </div>
+      </AnimatedElement>
     </div>
   );
 }

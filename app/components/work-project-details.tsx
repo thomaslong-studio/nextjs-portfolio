@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ReactNode } from "react";
+import AnimatedElement from "./animated-section";
 
 export interface ProjectDetailCard {
   title: string;
@@ -17,7 +18,7 @@ export default function WorkProjectDetails({
 }: WorkProjectDetailsProps) {
   return (
     <div className="wrapper w-full flex flex-col lg:flex-row gap-10 lg:gap-16 relative">
-      <div className="flex flex-col gap-6 lg:flex-1 lg:sticky lg:top-50 lg:self-start lg:h-fit">
+      <AnimatedElement className="flex flex-col gap-6 lg:flex-1 lg:sticky lg:top-50 lg:self-start lg:h-fit">
         <h2 className="font-heading font-semibold text-5xl lg:text-7xl">
           concept, design, and development
         </h2>
@@ -34,21 +35,20 @@ export default function WorkProjectDetails({
             </svg>
           </Link>
         )}
-      </div>
+      </AnimatedElement>
 
       <div className="flex flex-col gap-6 lg:flex-1 lg:sticky lg:top-50 lg:self-start">
         {cards.map((card, index) => (
-          <div
-            key={index}
-            className="border border-accent-soft p-4 lg:p-6 flex flex-col gap-3"
-          >
-            <h3 className="font-heading font-semibold text-2xl">
-              {card.title}
-            </h3>
-            <div className="text-sm text-accent-light">
-              {card.description}
+          <AnimatedElement key={index} delay={0.1 + index * 0.05}>
+            <div className="border border-accent-soft p-4 lg:p-6 flex flex-col gap-3">
+              <h3 className="font-heading font-semibold text-2xl">
+                {card.title}
+              </h3>
+              <div className="text-sm text-accent-light">
+                {card.description}
+              </div>
             </div>
-          </div>
+          </AnimatedElement>
         ))}
       </div>
     </div>

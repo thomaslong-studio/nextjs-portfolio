@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
+import AnimatedElement from "./animated-section";
 
 interface SectionMarqueeProps {
   items: string[];
@@ -56,7 +57,8 @@ export default function SectionMarquee({ items }: SectionMarqueeProps) {
   ));
 
   return (
-    <section className="flex px-4">
+    <AnimatedElement>
+      <section className="flex px-4">
       <div className="section-marquee w-full overflow-hidden bg-[#E5E5E5] py-6 lg:py-8">
       <Swiper
         modules={[Autoplay]}
@@ -66,7 +68,8 @@ export default function SectionMarquee({ items }: SectionMarqueeProps) {
         {slides}
       </Swiper>
       </div>
-    </section>
+      </section>
+    </AnimatedElement>
   );
 }
 

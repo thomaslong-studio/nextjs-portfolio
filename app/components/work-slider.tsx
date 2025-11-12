@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/scrollbar";
+import AnimatedElement from "./animated-section";
 
 export default function WorkSlider() {
   const cards = [
@@ -54,10 +55,12 @@ export default function WorkSlider() {
 
   return (
     <div className="wrapper flex flex-col gap-10 lg:gap-16 w-full">
-      <h2 className="font-heading font-semibold text-5xl lg:text-7xl">
-        selected work
-      </h2>
-      <div className="w-full">
+      <AnimatedElement>
+        <h2 className="font-heading font-semibold text-5xl lg:text-7xl">
+          selected work
+        </h2>
+      </AnimatedElement>
+      <AnimatedElement delay={0.1} className="w-full">
         <Swiper
           modules={[Scrollbar]}
           spaceBetween={12}
@@ -85,7 +88,7 @@ export default function WorkSlider() {
                       src={card.image}
                       alt={card.title}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-103"
+                      className="object-cover transition-transform duration-500 group-hover:scale-102"
                     />
                   </div>
                 )}
@@ -131,7 +134,7 @@ export default function WorkSlider() {
             );
           })}
         </Swiper>
-      </div>
+      </AnimatedElement>
     </div>
   );
 }

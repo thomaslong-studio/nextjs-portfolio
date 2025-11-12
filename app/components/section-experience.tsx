@@ -1,11 +1,16 @@
+import AnimatedElement from "./animated-section";
+
 export default function SectionExperience() {
   return (
     <div className="wrapper flex flex-col gap-10 lg:gap-16 w-full">
-      <h2 className="font-heading font-semibold text-5xl lg:text-7xl">
-        experience
-      </h2>
+      <AnimatedElement>
+        <h2 className="font-heading font-semibold text-5xl lg:text-7xl">
+          experience
+        </h2>
+      </AnimatedElement>
       {/* Experience 1 */}
-      <div className="flex self-stretch justify-start items-start flex-col lg:flex-row">
+      <AnimatedElement delay={0.1}>
+        <div className="flex self-stretch justify-start items-start flex-col lg:flex-row">
         <div className="w-full lg:w-1/3 flex border-solid border-[#2B2B2B] border-b py-3">
           <p className="flex-1 text-accent-light text-sm font-['Kode_Mono']">
             August 2022 – July 2025
@@ -70,8 +75,10 @@ export default function SectionExperience() {
           </div>
         </div>
       </div>
+      </AnimatedElement>
       {/* Experience 2 */}
-      <div className="flex self-stretch justify-start items-start flex-col lg:flex-row">
+      <AnimatedElement delay={0.15}>
+        <div className="flex self-stretch justify-start items-start flex-col lg:flex-row">
         <div className="w-full lg:w-1/3 flex border-solid border-[#2B2B2B] border-b py-3">
           <p className="flex-1 text-accent-light text-sm font-['Kode_Mono']">
             October 2021 - July 2022
@@ -115,8 +122,10 @@ export default function SectionExperience() {
           </div>
         </div>
       </div>
+      </AnimatedElement>
       {/* Experience 3 */}
-      <div className="flex self-stretch justify-start items-start flex-col lg:flex-row">
+      <AnimatedElement delay={0.2}>
+        <div className="flex self-stretch justify-start items-start flex-col lg:flex-row">
         <div className="w-full lg:w-1/3 flex border-solid border-[#2B2B2B] border-b py-3">
           <p className="flex-1 text-accent-light text-sm font-['Kode_Mono']">
             January, 2021 - October, 2021
@@ -153,8 +162,10 @@ export default function SectionExperience() {
           </div>
         </div>
       </div>
+      </AnimatedElement>
       {/* Experience 4 */}
-      <div className="flex self-stretch justify-start items-start flex-col lg:flex-row">
+      <AnimatedElement delay={0.25}>
+        <div className="flex self-stretch justify-start items-start flex-col lg:flex-row">
         <div className="w-full lg:w-1/3 flex border-solid border-[#2B2B2B] border-b py-3">
           <p className="flex-1 text-accent-light text-sm font-['Kode_Mono']">
             March, 2019 - August, 2022
@@ -191,6 +202,7 @@ export default function SectionExperience() {
           </div>
         </div>
       </div>
+      </AnimatedElement>
     </div>
   );
 }

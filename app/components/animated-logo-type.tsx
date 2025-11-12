@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import splitStringUsingRegex from "../utils/split-string-using-regex";
 
 const getTransformStyles = (isMouseEntered: boolean, index: number) => ({
@@ -9,7 +9,15 @@ const getTransformStyles = (isMouseEntered: boolean, index: number) => ({
 });
 
 export default function AnimatedLogoType() {
-  const [isMouseEntered, setIsMouseEntered] = useState(false);
+  const [isMouseEntered, setIsMouseEntered] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsMouseEntered(false);
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <h1
