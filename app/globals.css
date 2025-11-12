@@ -102,3 +102,15 @@ body {
 .swiper-scrollbar-custom .swiper-scrollbar-drag:active {
   cursor: grabbing;
 }
+
+/* Marquee Swiper Styles */
+.section-marquee .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;    
+  transition-timing-function: linear !important; 
+  position: relative;
+}
+
+.section-marquee .swiper-slide {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}
