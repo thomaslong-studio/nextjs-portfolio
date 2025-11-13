@@ -71,3 +71,46 @@ body {
 .input-field textarea:focus + .input-accent {
   width: 100%;
 }
+
+/* Swiper Scrollbar Styles */
+.swiper-scrollbar-custom {
+  padding-bottom: 24px;
+}
+
+.swiper-scrollbar-custom .swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: relative;
+  height: 4px;
+  background-color: var(--color-accent-soft);
+  border-radius: 0px;
+  margin-top: 32px;
+  display: flex;
+  width: 100%;
+  left: 0;
+}
+@media only screen and (min-width: 768px) {
+  .swiper-scrollbar-custom .swiper-scrollbar.swiper-scrollbar-horizontal {
+    margin-top: 48px;
+  }
+}
+
+.swiper-scrollbar-custom .swiper-scrollbar-drag {
+  background-color: var(--color-foreground);
+  border-radius: 0px;
+  cursor: grab;
+}
+
+.swiper-scrollbar-custom .swiper-scrollbar-drag:active {
+  cursor: grabbing;
+}
+
+/* Marquee Swiper Styles */
+.section-marquee .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;    
+  transition-timing-function: linear !important; 
+  position: relative;
+}
+
+.section-marquee .swiper-slide {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+}

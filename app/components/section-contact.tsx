@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import AnimatedElement from './animated-section';
 
 export default function SectionContact() {
   const [formData, setFormData] = useState({
@@ -54,12 +55,13 @@ export default function SectionContact() {
 
   return (
     <div className="wrapper flex flex-col lg:flex-row gap-10 lg:gap-16 w-full" id="contact">
-      <div className="flex flex-1 justify-center items-start flex-col">
+      <AnimatedElement className="flex flex-1 justify-center items-start flex-col">
         <h2 className="font-heading font-semibold text-5xl lg:text-7xl">
           let's build something together.
         </h2>
-      </div>
-      <form onSubmit={handleSubmit} className="flex flex-1 justify-center items-start flex-col gap-4">
+      </AnimatedElement>
+      <AnimatedElement delay={0.1} className="flex flex-1 justify-center items-start flex-col w-full">
+      <form onSubmit={handleSubmit} className="flex flex-1 justify-center items-start flex-col gap-4 w-full">
         {/* Name Field */}
         <div className="flex self-stretch justify-start items-start flex-col gap-2.5 border-solid border-accent-soft border">
           <div className="input-field relative h-[42px] flex self-stretch justify-start items-start flex-row gap-2.5 p-3 border-solid border-accent-light border-b">
@@ -131,6 +133,7 @@ export default function SectionContact() {
           </p>
         )}
       </form>
+      </AnimatedElement>
     </div>
   );
 }
