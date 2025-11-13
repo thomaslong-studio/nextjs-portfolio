@@ -10,18 +10,22 @@ export interface ProjectDetailCard {
 interface WorkProjectDetailsProps {
   liveSiteUrl?: string;
   cards: ProjectDetailCard[];
+  headingText?: string;
 }
 
 export default function WorkProjectDetails({
   liveSiteUrl,
   cards,
+  headingText,
 }: WorkProjectDetailsProps) {
   return (
     <div className="wrapper w-full flex flex-col lg:flex-row gap-10 lg:gap-16 relative">
       <AnimatedElement className="flex flex-col gap-6 lg:flex-1 lg:sticky lg:top-50 lg:self-start lg:h-fit">
+        {headingText && (
         <h2 className="font-heading font-semibold text-5xl lg:text-7xl">
-          concept, design, and development
-        </h2>
+            {headingText}
+          </h2>
+        )}
         {liveSiteUrl && (
           <Link
             href={liveSiteUrl}

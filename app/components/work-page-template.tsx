@@ -13,6 +13,7 @@ interface WorkPageTemplateProps {
   imageAlt: string;
   liveSiteUrl?: string;
   cards: ProjectDetailCard[];
+  headingText?: string;
 }
 
 export default function WorkPageTemplate({
@@ -25,6 +26,7 @@ export default function WorkPageTemplate({
   imageAlt,
   liveSiteUrl,
   cards,
+  headingText,
 }: WorkPageTemplateProps) {
   return (
     <div className="font-sans">
@@ -43,6 +45,7 @@ export default function WorkPageTemplate({
           <WorkProjectDetails
             liveSiteUrl={liveSiteUrl}
             cards={cards}
+            headingText={headingText}
           />
           <SectionMarquee items={[
             "Creative Development",

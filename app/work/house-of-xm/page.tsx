@@ -64,10 +64,11 @@ export default function HouseOfXM() {
       what="Design & Development"
       why="Rebrand"
       how="Next.js, Tailwind & Prismic"
-      imageSrc="/house_of_xm.webp"
+      imageSrc="/house_of_xm_2.webp"
       imageAlt="House of XM project"
       liveSiteUrl="https://houseofxm.com"
       cards={cards}
+      headingText="concept, design, and development"
     />
   );
 }
