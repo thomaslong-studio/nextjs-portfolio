@@ -13,42 +13,42 @@ export default function WorkSlider() {
     {
       id: 1,
       title: "house of xm",
-      categories: ["UI/UX Design", "Development"],
+      categories: ["UI/UX Design", "Front-End Development", "Next.js"],
       link: "/work/house-of-xm",
       image: "/house_of_xm.webp",
     },
     {
       id: 2,
       title: "neighbor",
-      categories: ["UI/UX Design", "Development", "Shopify"],
+      categories: ["UI/UX Design", "Front-End Development", "Shopify"],
       link: "/work/neighbor",
       image: "/neighbor.webp",
     },
     {
       id: 3,
       title: "highland",
-      categories: ["UI/UX Design", "Development", "Shopify"],
+      categories: ["UI/UX Design", "Front-End Development", "Shopify"],
       link: "/work/highland",
       image: "/highland.webp",
     },
     {
       id: 4,
       title: "old bones",
-      categories: ["Development", "Shopify"],
+      categories: ["Front-End Development", "Shopify"],
       link: "/work/old-bones",
       image: "/old_bones.webp",
     },
     {
       id: 5,
       title: "revant cosmetics",
-      categories: ["UI/UX Design", "Development", "Shopify"],
+      categories: ["UI/UX Design", "Front-End Development", "Shopify"],
       link: "/work/revant",
       image: "/revant_cosmetics.webp",
     },
     {
       id: 6,
       title: "rent panda",
-      categories: ["UI/UX Design", "Development", "React"],
+      categories: ["UI/UX Design", "Front-End Development", "React"],
       link: "/work/rent-panda",
       image: "/rent_panda.webp",
     },
@@ -82,7 +82,7 @@ export default function WorkSlider() {
         >
           {cards.map((card) => {
             const CardContent = (
-              <div className="relative aspect-[1/1] w-full overflow-hidden group cursor-pointer flex flex-col justify-end">
+              <div className="relative aspect-[4/5] w-full overflow-hidden group cursor-pointer flex flex-col justify-end">
                 {card.image && (
                   <div className="absolute inset-0 z-0">
                     <Image
