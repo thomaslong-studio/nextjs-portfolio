@@ -23,14 +23,6 @@ export default function Footer() {
           >
             Github
           </a>
-          <span className="text-accent-light">/</span>
-          <a 
-            href="Thomas_Longworth_CV.pdf" 
-            download
-            className="hover:text-white transition-colors"
-          >
-            Download CV
-          </a>
         </div>
       </div>
     </footer>
