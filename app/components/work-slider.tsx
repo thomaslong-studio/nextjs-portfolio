@@ -13,42 +13,42 @@ export default function WorkSlider() {
     {
       id: 1,
       title: "house of xm",
-      category: "Design & Development",
+      categories: ["UI/UX Design", "Development"],
       link: "/work/house-of-xm",
       image: "/house_of_xm.webp",
     },
     {
       id: 2,
       title: "neighbor",
-      category: "Development",
+      categories: ["UI/UX Design", "Development", "Shopify"],
       link: "/work/neighbor",
       image: "/neighbor.webp",
     },
     {
       id: 3,
       title: "highland",
-      category: "Design &Development",
+      categories: ["UI/UX Design", "Development", "Shopify"],
       link: "/work/highland",
       image: "/highland.webp",
     },
     {
       id: 4,
       title: "old bones",
-      category: "Development",
+      categories: ["Development", "Shopify"],
       link: "/work/old-bones",
       image: "/old_bones.webp",
     },
     {
       id: 5,
       title: "revant cosmetics",
-      category: "Design & Development",
+      categories: ["UI/UX Design", "Development", "Shopify"],
       link: "/work/revant",
       image: "/revant_cosmetics.webp",
     },
     {
       id: 6,
       title: "rent panda",
-      category: "Design & Development",
+      categories: ["UI/UX Design", "Development", "React"],
       link: "/work/rent-panda",
       image: "/rent_panda.webp",
     },
@@ -95,14 +95,21 @@ export default function WorkSlider() {
                 )}
                 {/* Bottom text overlay */}
                 <div className="flex p-3">
-                  <div className="flex flex-wrap justify-between items-center w-full bg-background/50 backdrop-blur-xs p-4">
+                  <div className="flex flex-col align-center w-full bg-background/50 backdrop-blur-xs p-4 gap-3">
                     <h3 className="font-heading font-semibold text-lg lg:text-2xl">
                       {card.title}
                     </h3>
-                    {card.category && (
-                      <span className="text-sm lg:text-base">
-                        {card.category}
-                      </span>
+                    {card.categories && card.categories.length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {card.categories.map((category) => (
+                          <span
+                            key={category}
+                            className="text-xs lg:text-sm px-2 py-1 rounded-full border border-foreground/20"
+                          >
+                            {category}
+                          </span>
+                        ))}
+                      </div>
                     )}
                   </div>
                 </div>
