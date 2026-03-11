@@ -12,8 +12,8 @@ export default function Home() {
       <main className="flex flex-col">
         <SectionHero />
         <SectionFeaturedTexts />
-        <SectionExperience />
         <WorkSlider />
+        <SectionExperience />
         <SectionMarquee items={[
           "Creative Development",
           "Design-Driven Code",
