@@ -11,7 +11,7 @@ export default function SectionFeaturedTexts() {
           Good UX is about removing friction and making complexity feel simple. I start by understanding the user’s goal and the context in which they’re interacting with a product.
         </p>
         <p className="text-sm lg:text-base">
-          From there, I focus on clarity—structuring interfaces with thoughtful hierarchy, clear interactions, and deliberate visual decisions that guide users naturally through a flow.
+          From there, I focus on clarity — structuring interfaces with thoughtful hierarchy, clear interactions, and deliberate visual decisions that guide users naturally through a flow.
         </p>
         <p className="text-sm lg:text-base">
           Because I work across design and engineering, I also think about UX as a system. Strong products rely on scalable components, consistent patterns, and front-end architecture that supports the experience long-term.        </p>
@@ -21,7 +21,7 @@ export default function SectionFeaturedTexts() {
           my approach to engineering.
         </h2>
         <p className="text-sm lg:text-base">
-          Good engineering is about building systems that are scalable, and dependable. I focus on writing code that is easy for teams to understand and extend—favoring simple solutions, consistent patterns, and maintainable architecture.
+          Good engineering is about building systems that are scalable, and dependable. I focus on writing code that is easy for teams to understand and extend — favoring simple solutions, consistent patterns, and maintainable architecture.
         </p>
         <p className="text-sm lg:text-base">
           Rather than treating each feature as an isolated task, I think in terms of systems. Reusable components, well-structured front-end architecture, and thoughtful abstractions make it easier for products to grow without creating unnecessary complexity.
