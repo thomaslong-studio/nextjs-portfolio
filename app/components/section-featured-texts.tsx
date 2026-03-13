@@ -21,13 +21,13 @@ export default function SectionFeaturedTexts() {
           my approach to engineering.
         </h2>
         <p className="text-sm lg:text-base">
-          Good engineering is about building systems that are scalable, and dependable. I focus on writing code that is easy for teams to understand and extend — favoring simple solutions, consistent patterns, and maintainable architecture.
+          Good engineering is about building systems that are scalable and dependable. I focus on writing code that’s clear, maintainable, and easy for teams to extend — favoring simple solutions, consistent patterns, and thoughtful structure.
         </p>
         <p className="text-sm lg:text-base">
-          Rather than treating each feature as an isolated task, I think in terms of systems. Reusable components, well-structured front-end architecture, and thoughtful abstractions make it easier for products to grow without creating unnecessary complexity.
+          Rather than treating features as isolated tasks, I approach front-end work as part of a larger system. Reusable components and well-organized architecture allow products to evolve without introducing unnecessary complexity.
         </p>
         <p className="text-sm lg:text-base">
-          Because I work closely with design and product, I also see engineering as a critical part of the user experience. Performance, accessibility, and responsiveness are core considerations from the start, ensuring the final product feels polished and reliable.
+          Because I work closely with design and product, I also see engineering as a key part of the user experience. Performance, accessibility, and responsiveness are considered from the start, helping ensure the final product feels polished and reliable.
         </p>
       </AnimatedElement>
     </div>
